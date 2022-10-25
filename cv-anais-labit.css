@@ -1,0 +1,66 @@
+/* GENERAL */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: rgb(92, 86, 86);
+  background-color:rgb(253, 244, 228)
+}
+
+
+  link:hover, a:hover{
+  background-color: #365E7D;
+  color: rgb(253, 244, 228);
+  font-size:larger
+}
+
+link, a{
+  color:#365E7D
+}
+
+
+header {
+    background-color: rgb(250, 234, 17);
+}
+
+.top_header {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 150px;
+  transition: transform .7s ease-in-out;
+}
+
+img:hover {
+  transform: rotate(360deg);
+}
+
+text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content:space-around;
+  font-size: 15px;
+}
+
+h4 {
+    transition: transform .7s ease-in-out;
+}
+
+.bottom {
+    background-color: rgb(250, 234, 17);
+    border-top: solid 2px  rgb(92, 86, 86);
+    border-bottom: solid 2px  rgb(92, 86, 86);
+    }
+
+footer {
+margin: 1em;10%
+}
