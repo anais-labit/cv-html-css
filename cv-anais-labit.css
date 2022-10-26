@@ -1,5 +1,6 @@
 /* GENERAL */
 
+/* définir le style global de la page (police, taille, couleur de fond...)*/
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -8,59 +9,57 @@ body {
   background-color:rgb(253, 244, 228)
 }
 
-
+/* faire en sorte que la couleur et la taille des éléments liens changent lorsqu'on les survole*/
   link:hover, a:hover{
   background-color: #365E7D;
   color: rgb(253, 244, 228);
   font-size:larger
 }
 
+/* définir la couleur par défaut des liens*/
 link, a{
   color:#365E7D
 }
 
-
+/* définir la couleur de fond du header */
 header {
     background-color: rgb(250, 234, 17);
 }
+
+/* mettre text + avatar (img) = top_header  en display flex et les centrer horizontalement dans le header*/
 
 .top_header {
   display: flex;
   align-items: center;
 }
 
+/* faire rotationner avatar lorsque l'on passe desssus*/
+img:hover {
+  transform: rotate(360deg);
+}
+
+/* définir la taille de l'avatar et la vitesse de son animation */
 img {
   width: 150px;
   transition: transform .7s ease-in-out;
 }
 
-img:hover {
-  transform: rotate(360deg);
-}
 
-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-}
-
+/* metttre nav en display flex et répartir les onglets proportionnellement  */
 nav {
   display: flex;
   justify-content:space-around;
   font-size: 15px;
 }
 
-h4 {
-    transition: transform .7s ease-in-out;
-}
-
+/* ajouter des bordures à bottom et colorer son fond*/
 .bottom {
     background-color: rgb(250, 234, 17);
     border-top: solid 2px  rgb(92, 86, 86);
     border-bottom: solid 2px  rgb(92, 86, 86);
     }
 
+/* s'assurer que le backgroud fasse toute la taille de bord à bord*/
 footer {
 margin: 1em;10%
 }
