@@ -9,6 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap"
       rel="stylesheet"
     />
@@ -22,30 +29,117 @@
 
         <div class="text">
           <h1>Anaïs Labit</h1>
-          <p>
-            <em>
-              • en recherche de contrat d'alternance Développeur.se Web •
-            </em>
-          </p>
+          <p>• en recherche de contrat d'alternance Développeur.se Web •</p>
         </div>
       </section>
-
       <nav>
-        <a href="#about">À MON SUJET</a> <a href="#form">FORMATIONS</a>
-        <a href="#exp">EXPÉRIENCES</a>
-        <a href="#comp">COMPÉTENCES</a>
+        <a href="#about">About me</a> <a href="#form">Formations</a>
+        <a href="#exp">Expériences</a>
+        <a href="#comp">Compétences</a>
+        <a href="#port">Portfolio</a>
       </nav>
     </header>
+
+    <div class="aboutme_banner">
+      <h1 id="about">About me</h1>
+      <p>
+        À 29 ans, j’ai fait le choix d'amorcer un processus de reconversion afin
+        de m’épanouir dans un domaine sans cesse en évolution, le développement
+        web. Mon expérience de médiatrice culturelle m'a notamment permis de
+        développer rigueur, anticipation, ingéniosité et adaptabilité aux
+        besoins des partenaires. J'ai validé une formation AWS cloud Practionner
+        cet été, première étape de ce changement de vie mûrement réfléchi qui,
+        outre le cloud lui-même, m'a permis de me familiariser avec des
+        environnements de travail GNU/Linux, découvrir les fondamentaux du
+        réseau, de la sécurité et des bases de données ainsi que de l’écosystème
+        informatique en général. De retour à l'école depuis le mois de
+        septembre, je me forme en HTML, CSS, PHP et Python notamment.
+      </p>
+    </div>
+
+    <div class="cards_container">
+      <div class="flip_card">
+        <div class="flip_card_inner">
+          <div class="flip_card_front">
+            <span> <i class="fa-solid fa-graduation-cap"> 2023</i> </span>
+          </div>
+          <div class="flip_card_back">
+            <h3>Titre Développeur Web niveau 5</h3>
+            <p>La Plateforme (rentrée septembre 2022)</p>
+            <a href="https://laplateforme.io/start/developpeur-web-mobile/"
+              >Découvrir l'école</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="flip_card">
+        <div class="flip_card_inner">
+          <div class="flip_card_front">
+            <span> <i class="fa-solid fa-graduation-cap"> 2022</i> </span>
+          </div>
+
+          <div class="flip_card_back">
+            <h3>Certification AWS Cloud Practitioner</h3>
+            <p>Amazon Web Service</p>
+            <a
+              href="https://www.credly.com/badges/08363970-aba5-4b36-8e09-9bada1097b07/public_url"
+              >Voir mon certificat</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="flip_card">
+        <div class="flip_card_inner">
+          <div class="flip_card_front">
+            <span> <i class="fa-solid fa-graduation-cap"> 2015</i> </span>
+          </div>
+          <div class="flip_card_back">
+            <h3>Master Médiation culturelle des arts</h3>
+            <p>Mémoire : « Le cinéma, un Art au cœur d’une industrie. »</p>
+            <p>Aix-Marseille Université</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip_card">
+        <div class="flip_card_inner">
+          <div class="flip_card_front">
+            <span> <i class="fa-solid fa-graduation-cap"> 2013</i> </span>
+          </div>
+          <div class="flip_card_back">
+            <h3>Licence Anthropologie Culturelle</h3>
+            <p>University of Sussex (GB)</p>
+            <a href="https://www.sussex.ac.uk/anthropology/"
+              >Découvrir l'université</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="flip_card">
+        <div class="flip_card_inner">
+          <div class="flip_card_front">
+            <span> <i class="fa-solid fa-graduation-cap"> 2010</i> </span>
+          </div>
+          <div class="flip_card_back">
+            <h3>Lycée Sacré-coeur <br />Aix-en-Provence</h3>
+            <p>Baccalauréat littéraire spécialité cinéma</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="page">
       <div id="exp" class="exp_container">
         <div class="article_container1">
           <div class="text_container">
-            <h3>• 2021- 2018 • Cinéma Diagonal •</h3>
+            <h3>2021- 2018 • Cinéma Diagonal</h3>
             <h3>Assistante de médiation et programmation</h3>
             <ul>
               <li>
-                choix des films et des partenaires en lien avec les objetifs du
+                choix des films et des partenaires en lien avec les objectifs du
                 projet
               </li>
               <li>
@@ -67,7 +161,7 @@
 
         <div class="article_container2">
           <div class="text_container">
-            <h3>• 2018-2015 • Cinéma Institut de l'Image •</h3>
+            <h3>2018-2015 • Cinéma Institut de l'Image</h3>
             <h3>Chargée de mission enquête et valorisation</h3>
             <ul>
               <li>
@@ -87,9 +181,7 @@
 
         <div class="article_container3">
           <div class="text_container">
-            <h3>
-              • 2015-2014 • Cinéma Friche Belle de Mai et Cinéma Alhambra •
-            </h3>
+            <h3>2015-2014 • Cinéma Friche Belle de Mai et Cinéma Alhambra</h3>
             <h3>Stages en action culturelle</h3>
             <ul>
               <li>
@@ -107,6 +199,24 @@
     </div>
 
     <hr />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Début du Footer -->
     <footer>
