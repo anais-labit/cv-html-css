@@ -31,17 +31,18 @@ header {
   height: 100px;
   color: rgb(75, 69, 69);
   padding-bottom: 50px;
+  box-shadow: 0 0 10px grey;
 }
 
 .aboutme_banner p {
   color: rgb(70, 69, 69);
   text-align: justify;
-  background-color: #fff;
+  background-color: #ffffff;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   padding-left: 10px;
   padding-right: 10px;
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
 
 /* RUBRIQUE FORMATIONS */
@@ -93,8 +94,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 140px;
+  padding-bottom: 40px;
   background-image: url(/img/bck2.jpg);
   background-size: contain;
 }
@@ -105,9 +106,9 @@ header {
 
 .flip_card_front span {
   border-radius: 50px;
-  color: #32a1ce;
-  text-shadow: 2px 2px 3px orange;
-  font-size: 75px;
+  color: #fdfbfbe0;
+  text-shadow: 3px 3px 4px grey;
+  font-size: 60px;
 }
 
 /* RUBRIQUE EXPERIENCES */
@@ -119,6 +120,7 @@ header {
 
 /* agir sur le contenant du text (taille, centrer, bordures...)*/
 .text_container {
+  border-radius: 5px;
   width: 100%;
   text-align: justify;
   display: flex;
@@ -126,7 +128,7 @@ header {
   flex-direction: column;
   align-items: center;
   font-size: 1em;
-  background-color: white;
+  background: linear-gradient(#fdfbfb, #ebedee);
     color: rgb(75, 69, 69);
 
 }
@@ -137,11 +139,13 @@ header {
   border-top: 2rem solid #32a1ce;
   border-right: thick double #32a1ce;
   width: 50%;
+    height: 50vh;
 }
 
 .article_container2 {
   display: flex;
   width: 50%;
+    height: 50vh;
   padding-right: 0px;
   padding-bottom: 50px;
   margin-left: 180px;
@@ -150,12 +154,15 @@ header {
 }
 
 .article_container3 .text_container {
-  border-left: thick double #32a1ce;
+  border-left: 1rem solid #32a1ce;
+    border-top: thick double #32a1ce;
+
 }
 
 /* flex le conteur 2 et reverse par rapport à 1 et 3 */
 .article_container3 {
   width: 60%;
+  height: 50vh;
   padding-left: 20px;
   display: flex;
   flex-direction: row-reverse;
@@ -194,12 +201,12 @@ header {
   content: " ";
   width: 0;
   height: 0;
-  position: relative;
-  top: 710px;
-  left: 60px;
-  border-top: 18px solid transparent;
-  border-bottom: 18px solid transparent;
-  border-left: 60px solid #32a1ce;
+  position: absolute;
+  top: 1800px;
+  left: 80px;
+  border-top: 20px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 60px solid orange;
 }
 
 
@@ -210,4 +217,61 @@ header {
   font-size: 1.1em;
   transition: 0.3s;
   
+}
+
+
+/* RUBRIQUE PORTFOLIO */
+
+.portfolio {
+background-image: url(/img/bck2.jpg);
+background-size: cover;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.portfolio .container {
+  display: flex;
+  justify-content: center;
+  }
+
+h1 {
+  font-size: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.portfolio .cards button {
+  background-color:whitesmoke;
+  word-spacing: 0.2em;
+  text-align: center;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.portfolio button a {
+  text-decoration: none;
+  color:orange;
+  position: relative;
+}
+
+.cards:hover {
+padding-top: 60px;
+padding-bottom: 60px;
+
+}
+
+.cards{
+  padding: 30px;
+  outline: none;
+  box-shadow: 0 0 10px grey;
+  border-radius: 5px;
 }
