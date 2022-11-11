@@ -13,7 +13,7 @@ body {
   link:hover, a:hover{
   background-color: #365E7D;
   color: rgb(253, 244, 228);
-  font-size:larger
+  font-size:larger;
 }
 
 /* définir la couleur par défaut des liens*/
