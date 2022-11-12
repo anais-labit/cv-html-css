@@ -3,21 +3,53 @@ body {
   color: rgb(63, 62, 62);
 }
 
-/* faire rotationner avatar lorsque l'on passe desssus*/
-.top_header img:hover {
-  transform: rotate(360deg);
-}
-
-/* définir la taille de l'avatar et la vitesse de son animation */
-.top_header img {
-  width: 150px;
-  transition: transform 0.7s ease-in-out;
-}
-
 header {
+  padding-top: 30px;
   padding-bottom: 50px;
-    background-image: url(/img/bck2.jpg);
+  background-image: url(/img/bck2.jpg);
   background-size: contain;
+}
+
+header h1,
+header p {
+  margin-left: 30px;
+}
+
+/* NAVBAR */
+
+nav {
+  background-image: url(img2.jpg);
+  background-size: cover;
+  height: 50px;
+  background-color: #0005;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 50px;
+  width: 10em;
+  height: 10em;
+  padding: 10px;
+  margin-top: -70px;
+}
+
+nav ul {
+  margin-right: 30px;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover {
+  background-color: #1a5992;
+  padding: 5px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 20px;
 }
 
 /* RUBRIQUE À PROPOS DE MOI  */
@@ -30,7 +62,7 @@ header {
   flex-direction: column;
   height: 100px;
   color: rgb(75, 69, 69);
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   box-shadow: 0 0 10px grey;
 }
 
@@ -39,7 +71,7 @@ header {
   text-align: justify;
   background-color: #ffffff;
   padding-top: 20px;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
   padding-left: 10px;
   padding-right: 10px;
   line-height: 1.7em;
@@ -52,6 +84,17 @@ header {
   width: 200px;
   height: 200px;
   perspective: 1000px;
+}
+
+.first_card {
+  margin-top: -70px;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  background-color: #639fab;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
 
 /* containeur de l'avant et l'arrière de la card */
@@ -80,24 +123,38 @@ header {
 
 /* définir les propriétés du back de la card */
 .flip_card_back {
-  color:   color: rgb(75, 69, 69);
+  color: rgb(75, 69, 69);
   transform: rotateY(180deg);
   text-align: center;
   padding: 5px;
-  background-color: orange;
+  margin-top: -40px;
+  background-color: #639fab;
   color: #fff;
 }
-
 
 /* positionner les cartes côte à côte */
 .cards_container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 140px;
-  padding-bottom: 40px;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 130px;
+  padding-bottom: 50px;
   background-image: url(/img/bck2.jpg);
   background-size: contain;
+}
+
+.cards_container .card_content {
+  background-color: #1a5992;
+  position: relative;
+  right: 80px;
+  top: -20px;
+  width: 160px;
+  height: 270px;
+  padding: 10px;
+  text-align: center;
+  writing-mode: vertical-rl;
+  color: #fdfbfb;
 }
 
 .cards_container a {
@@ -105,10 +162,9 @@ header {
 }
 
 .flip_card_front span {
-  border-radius: 50px;
-  color: #fdfbfbe0;
-  text-shadow: 3px 3px 4px grey;
-  font-size: 60px;
+  color: lightgray;
+  text-shadow: 3px 3px 3px rgb(95, 93, 93);
+  font-size: 70px;
 }
 
 /* RUBRIQUE EXPERIENCES */
@@ -129,34 +185,32 @@ header {
   align-items: center;
   font-size: 1em;
   background: linear-gradient(#fdfbfb, #ebedee);
-    color: rgb(75, 69, 69);
-
+  color: rgb(75, 69, 69);
 }
 
 .article_container1 {
   display: flex;
   padding-bottom: 50px;
-  border-top: 2rem solid #32a1ce;
-  border-right: thick double #32a1ce;
+  border-top: 2rem solid #1a5992;
+  border-right: thick double #1a5992;
   width: 50%;
-    height: 50vh;
+  height: 50vh;
 }
 
 .article_container2 {
   display: flex;
   width: 50%;
-    height: 50vh;
+  height: 50vh;
   padding-right: 0px;
   padding-bottom: 50px;
   margin-left: 180px;
-  border-right: 1.5rem solid #32a1ce;
-  border-top: thick double #32a1ce;
+  border-right: 1.5rem solid #1a5992;
+  border-top: thick double #1a5992;
 }
 
 .article_container3 .text_container {
-  border-left: 1rem solid #32a1ce;
-    border-top: thick double #32a1ce;
-
+  border-left: 1rem solid #1a5992;
+  border-top: thick double #1a5992;
 }
 
 /* flex le conteur 2 et reverse par rapport à 1 et 3 */
@@ -175,7 +229,7 @@ header {
   left: 40px;
   height: 100px;
   border-bottom: 30px solid transparent;
-  border-left: 60px solid orange;
+  border-left: 60px solid #639fab;
   position: relative;
 }
 .article_container2::before {
@@ -183,7 +237,7 @@ header {
   left: 930px;
   width: 7px;
   height: 300px;
-  background: orange;
+  background: #639fab;
   position: absolute;
 }
 .article_container3::before {
@@ -192,23 +246,21 @@ header {
   top: 70px;
   width: 60px;
   height: 170px;
-  background: orange;
+  background: #639fab;
   position: relative;
 }
 
-
 .page::before {
   content: " ";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 1800px;
   left: 80px;
+  top: 1050px;
+  width: 60px;
+  height: 170px;
+  position: relative;
   border-top: 20px solid transparent;
   border-bottom: 50px solid transparent;
-  border-left: 60px solid orange;
+  border-left: 60px solid #639fab;
 }
-
 
 /* changement de bck color et taille du texte quand hover*/
 .article_container1:hover .text_container,
@@ -216,15 +268,13 @@ header {
 .article_container3:hover .text_container {
   font-size: 1.1em;
   transition: 0.3s;
-  
 }
-
 
 /* RUBRIQUE PORTFOLIO */
 
 .portfolio {
-background-image: url(/img/bck2.jpg);
-background-size: cover;
+  background-image: url(/img/bck2.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -233,7 +283,7 @@ background-size: cover;
 .portfolio .container {
   display: flex;
   justify-content: center;
-  }
+}
 
 h1 {
   font-size: 40px;
@@ -247,7 +297,7 @@ h1 {
 }
 
 .portfolio .cards button {
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   word-spacing: 0.2em;
   text-align: center;
   padding: 6px;
@@ -259,19 +309,54 @@ h1 {
 
 .portfolio button a {
   text-decoration: none;
-  color:orange;
+  color: #639fab;
   position: relative;
 }
 
 .cards:hover {
-padding-top: 60px;
-padding-bottom: 60px;
-
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.cards{
+.cards {
   padding: 30px;
   outline: none;
   box-shadow: 0 0 10px grey;
   border-radius: 5px;
+}
+
+/* FOOTER */
+
+footer {
+  font-family: var(--font);
+  padding: 1.7em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-weight: 600;
+  margin: 0;
+}
+
+footer span {
+  color: #1a5992;
+}
+
+footer > div:nth-child(3) a {
+  font-size: 1.2em;
+  margin: 0 0.5em;
+  color: var(--text-hover);
+}
+
+/* faire rotationner avatar lorsque l'on passe desssus*/
+footer:hover img {
+  transform: rotate(360deg);
+}
+
+/* définir la taille de l'avatar et la vitesse de son animation */
+footer img {
+  width: 30px;
+  transition: transform 0.7s ease-in-out;
 }
