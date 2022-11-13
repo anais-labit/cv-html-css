@@ -6,13 +6,20 @@ body {
 header {
   padding-top: 30px;
   padding-bottom: 50px;
-  background-image: url(/img/bck2.jpg);
-  background-size: contain;
+  background-image: url(/img/des-recits-J8IXSCV2eEA-unsplash.jpg);
 }
 
-header h1,
+header h1 {
+  margin-left: 280px;
+  font-size: 40px;
+  color: white;
+}
+
 header p {
   margin-left: 30px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 280px;
 }
 
 /* NAVBAR */
@@ -24,16 +31,16 @@ nav {
   background-color: #0005;
   display: flex;
   align-items: center;
+  text-align: center;
   position: fixed;
-  right: 50px;
+  left: 55px;
   width: 10em;
   height: 10em;
   padding: 10px;
-  margin-top: -70px;
+  margin-top: -100px;
 }
 
 nav ul {
-  margin-right: 30px;
   margin: 0;
   padding: 0;
 }
@@ -43,7 +50,7 @@ nav ul li {
   transition: 0.7s all;
 }
 nav ul li:hover {
-  background-color: #1a5992;
+  background-color: #639fab;
   padding: 5px;
 }
 nav ul li a {
@@ -71,7 +78,7 @@ nav ul li a {
   text-align: justify;
   background-color: #ffffff;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   padding-left: 10px;
   padding-right: 10px;
   line-height: 1.7em;
@@ -138,14 +145,13 @@ nav ul li a {
   flex-direction: row-reverse;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 130px;
-  padding-bottom: 50px;
+  padding-top: 120px;
   background-image: url(/img/bck2.jpg);
   background-size: contain;
 }
 
 .cards_container .card_content {
-  background-color: #1a5992;
+  background-color: #e0b825;
   position: relative;
   right: 80px;
   top: -20px;
@@ -167,109 +173,6 @@ nav ul li a {
   font-size: 70px;
 }
 
-/* RUBRIQUE EXPERIENCES */
-
-.page {
-  background-image: url(/img/bck2.jpg);
-  background-size: cover;
-}
-
-/* agir sur le contenant du text (taille, centrer, bordures...)*/
-.text_container {
-  border-radius: 5px;
-  width: 100%;
-  text-align: justify;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1em;
-  background: linear-gradient(#fdfbfb, #ebedee);
-  color: rgb(75, 69, 69);
-}
-
-.article_container1 {
-  display: flex;
-  padding-bottom: 50px;
-  border-top: 2rem solid #1a5992;
-  border-right: thick double #1a5992;
-  width: 50%;
-  height: 50vh;
-}
-
-.article_container2 {
-  display: flex;
-  width: 50%;
-  height: 50vh;
-  padding-right: 0px;
-  padding-bottom: 50px;
-  margin-left: 180px;
-  border-right: 1.5rem solid #1a5992;
-  border-top: thick double #1a5992;
-}
-
-.article_container3 .text_container {
-  border-left: 1rem solid #1a5992;
-  border-top: thick double #1a5992;
-}
-
-/* flex le conteur 2 et reverse par rapport à 1 et 3 */
-.article_container3 {
-  width: 60%;
-  height: 50vh;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: row-reverse;
-  padding-bottom: 50px;
-}
-
-/* création de contenus déco */
-.article_container1::before {
-  content: " ";
-  left: 40px;
-  height: 100px;
-  border-bottom: 30px solid transparent;
-  border-left: 60px solid #639fab;
-  position: relative;
-}
-.article_container2::before {
-  content: " ";
-  left: 930px;
-  width: 7px;
-  height: 300px;
-  background: #639fab;
-  position: absolute;
-}
-.article_container3::before {
-  content: " ";
-  right: 30px;
-  top: 70px;
-  width: 60px;
-  height: 170px;
-  background: #639fab;
-  position: relative;
-}
-
-.page::before {
-  content: " ";
-  left: 80px;
-  top: 1050px;
-  width: 60px;
-  height: 170px;
-  position: relative;
-  border-top: 20px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-left: 60px solid #639fab;
-}
-
-/* changement de bck color et taille du texte quand hover*/
-.article_container1:hover .text_container,
-.article_container2:hover .text_container,
-.article_container3:hover .text_container {
-  font-size: 1.1em;
-  transition: 0.3s;
-}
-
 /* RUBRIQUE PORTFOLIO */
 
 .portfolio {
@@ -277,23 +180,33 @@ nav ul li a {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
 }
 
-.portfolio .container {
+.portfolio .container h1 {
   display: flex;
   justify-content: center;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   text-align: center;
   padding-bottom: 50px;
+  padding: 30px;
+  outline: none;
+  box-shadow: 0 0 8px grey;
+}
+
+.card0,
+.card1,
+.card2,
+.card3 {
+  padding-right: 50px;
+  padding-left: 40px;
 }
 
 .portfolio .cards button {
@@ -318,45 +231,155 @@ h1 {
   padding-bottom: 60px;
 }
 
-.cards {
-  padding: 30px;
-  outline: none;
-  box-shadow: 0 0 10px grey;
-  border-radius: 5px;
+/* RUBRIQUE EXPERIENCES */
+
+.page {
+  background-image: url(/img/bck2.jpg);
+  background-size: cover;
+  padding-left: 170px;
+  padding-top: 50px;
 }
+
+/* agir sur le contenant du text (taille, centrer, bordures...)*/
+.text_container {
+  width: 100%;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+  background: linear-gradient(#fdfbfb, #ebedee);
+  color: rgb(75, 69, 69);
+}
+
+.article_container1 {
+  font-size: 14px;
+  display: flex;
+  padding-bottom: 50px;
+  border-top: 2rem solid #e0b825;
+  border-right: thick double #e0b825;
+  width: 45%;
+  height: 35vh;
+}
+
+.article_container2 {
+  font-size: 14px;
+  display: flex;
+  width: 50%;
+  height: 30vh;
+  padding-right: 0px;
+  padding-bottom: 50px;
+  margin-left: 180px;
+  border-right: 1.5rem solid #e0b825;
+  border-top: thick double #e0b825;
+}
+
+.article_container3 .text_container {
+  border-left: 1rem solid #e0b825;
+  border-top: thick double #e0b825;
+}
+
+/* flex le conteur 2 et reverse par rapport à 1 et 3 */
+.article_container3 {
+  font-size: 14px;
+
+  width: 55%;
+  height: 30vh;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 50px;
+}
+
+/* création de contenus déco */
+.article_container1::before {
+  content: " ";
+  left: 40px;
+  height: 100px;
+  border-bottom: 30px solid transparent;
+  border-left: 60px solid #639fab;
+  position: relative;
+}
+.article_container2::before {
+  content: " ";
+  left: 650px;
+  width: 7px;
+  height: 300px;
+  background: #639fab;
+  position: relative;
+}
+.article_container3::before {
+  content: " ";
+  position: relative;
+  border-top: 20px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 40px solid #639fab;
+}
+
+.exp {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 30px;
+  padding-left: 70px;
+}
+
+/* changement de bck color et taille du texte quand hover
+
+.article_container1:hover .text_container,
+.article_container2:hover .text_container,
+.article_container3:hover .text_container {
+  font-size: 1.1em;
+  transition: 0.3s;
+} */
 
 /* FOOTER */
 
 footer {
-  font-family: var(--font);
-  padding: 1.7em;
+  /* background-image: url(/img/bck2.jpg);
+  background-size: contain; */
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.social {
+  display: flex;
+  align-items: center;
+}
+
 footer p {
   font-weight: 600;
-  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 footer span {
-  color: #1a5992;
+  color: #e0b825;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 600;
 }
 
-footer > div:nth-child(3) a {
-  font-size: 1.2em;
-  margin: 0 0.5em;
-  color: var(--text-hover);
+footer a {
+  font-size: 2em;
+  color: #4b4545;
+  padding-right: 30px;
 }
 
 /* faire rotationner avatar lorsque l'on passe desssus*/
-footer:hover img {
+footer:hover img,
+footer:hover i {
   transform: rotate(360deg);
 }
 
 /* définir la taille de l'avatar et la vitesse de son animation */
-footer img {
+footer img,
+footer i {
   width: 30px;
   transition: transform 0.7s ease-in-out;
 }
