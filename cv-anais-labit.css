@@ -1,65 +1,583 @@
-/* GENERAL */
-
-/* définir le style global de la page (police, taille, couleur de fond...)*/
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 0.9rem;
-  color: rgb(92, 86, 86);
-  background-color:rgb(253, 244, 228)
+  font-family: "Montserrat";
+  color: rgb(75, 69, 69);
 }
 
-/* faire en sorte que la couleur et la taille des éléments liens changent lorsqu'on les survole*/
-  link:hover, a:hover{
-  background-color: #365E7D;
-  color: rgb(253, 244, 228);
-  font-size:larger;
+h1 {
+  font-size: 35px;
 }
 
-/* définir la couleur par défaut des liens*/
-link, a{
-  color:#365E7D
-}
-
-/* définir la couleur de fond du header */
 header {
-    background-color: rgb(250, 234, 17);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(/img/des-recits-J8IXSCV2eEA-unsplash.jpg);
 }
 
-/* mettre text + avatar (img) = top_header  en display flex et les centrer horizontalement dans le header*/
+header h1 {
+  margin-left: 270px;
+  font-size: 40px;
+  color: white;
+}
 
-.top_header {
+header p {
+  margin-left: 30px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 270px;
+}
+
+/* NAVBAR */
+
+nav {
+  background-image: url(img2.jpg);
+  background-size: cover;
+  height: 50px;
+  background-color: #0005;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  z-index: 2;
+  left: 55px;
+  width: 10em;
+  height: 10em;
+  padding: 10px;
+  margin-top: -100px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover {
+  background-color: #639fab;
+  padding: 5px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 20px;
+}
+
+/* RUBRIQUE À PROPOS DE MOI  */
+
+.aboutme_banner {
+  background-image: url(/img/bck2.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100px;
+  color: rgb(75, 69, 69);
+  padding-bottom: 80px;
+  box-shadow: 0 0 10px grey;
+}
+
+.aboutme_banner .details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 50px;
+}
+
+.details .born h9,
+.details .profil h9,
+.details .birth h9 {
+  font-size: 12px;
+}
+
+.details .born h5,
+.details .profil h5,
+.details .birth h5 {
+  font-size: 13px;
+  padding-right: 200px;
+}
+
+.aboutme_banner p {
+  color: rgb(75, 69, 69);
+  text-align: justify;
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.7em;
+  padding-left: 50px;
+  z-index: 3;
+}
+
+.aboutme_banner h1 {
+  padding-top: 20px;
+  padding-left: 50px;
+  z-index: 3;
+}
+
+/* RUBRIQUE FORMATIONS */
+
+/*  définir les proporités du container .flip_card */
+.flip_card {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  z-index: 3;
+}
+
+.first_card {
+  margin-top: -70px;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  background-color: #639fab;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  z-index: 3;
+}
+
+/* containeur de l'avant et l'arrière de la card */
+.flip_card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* tourner à 180° sur soi même quand hover sur lee container .flip_card */
+.flip_card:hover .flip_card_inner {
+  transform: rotateY(180deg);
+}
+
+/* placer l'avant et l'arrière de la card */
+.flip_card_front,
+.flip_card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* définir les propriétés du back de la card */
+.flip_card_back {
+  color: rgb(75, 69, 69);
+  transform: rotateY(180deg);
+  text-align: center;
+  padding: 5px;
+  margin-top: -40px;
+  background-color: #639fab;
+  color: #fff;
+}
+
+/* positionner les cartes côte à côte */
+.cards_container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 210px;
+  background-image: url(/img/bck2.jpg);
+  background-size: contain;
+}
+
+.cards_container .card_content {
+  background-color: #e0b825;
+  position: relative;
+  right: 90px;
+  top: -35px;
+  width: 150px;
+  height: 260px;
+  padding: 10px;
+  text-align: center;
+  writing-mode: vertical-rl;
+  color: #fdfbfb;
+  z-index: 3;
+}
+
+.cards_container a {
+  color: rgb(95, 93, 93);
+}
+
+.flip_card_front span {
+  color: lightgray;
+  text-shadow: 2px 2px 3px rgb(75, 69, 69);
+  font-size: 70px;
+}
+
+/* RUBRIQUE PORTFOLIO */
+
+.portfolio {
+  background-image: url(/img/bck2.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio .container h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  padding-bottom: 50px;
+  padding: 30px;
+  outline: none;
+  box-shadow: 0 0 8px grey;
+}
+
+.card0,
+.card1,
+.card2,
+.card3 {
+  padding-right: 50px;
+  padding-left: 40px;
+}
+
+.portfolio .cards button {
+  background-color: whitesmoke;
+  word-spacing: 0.2em;
+  text-align: center;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.portfolio button a {
+  text-decoration: none;
+  color: #639fab;
+  position: relative;
+}
+
+.cards:hover {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* RUBRIQUE EXPERIENCES */
+
+.page {
+  background-image: url(/img/bck2.jpg);
+  background-size: cover;
+  padding-left: 170px;
+  padding-top: 30px;
+}
+
+/* agir sur le contenant du text (taille, centrer, bordures...)*/
+.text_container {
+  width: 100%;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+  background: linear-gradient(#fdfbfb, #ebedee);
+  color: rgb(75, 69, 69);
+}
+
+.article_container1 {
+  font-size: 14px;
+  display: flex;
+  padding-bottom: 50px;
+  border-top: 2rem solid #e0b825;
+  border-right: thick double #e0b825;
+  width: 45%;
+  height: 35vh;
+}
+
+.article_container2 {
+  font-size: 14px;
+  display: flex;
+  width: 50%;
+  height: 30vh;
+  padding-right: 0px;
+  padding-bottom: 50px;
+  margin-left: 180px;
+  border-right: 1.5rem solid #e0b825;
+  border-top: thick double #e0b825;
+}
+
+.article_container3 .text_container {
+  border-left: 1rem solid #e0b825;
+  border-top: thick double #e0b825;
+}
+
+/* flex le conteur 2 et reverse par rapport à 1 et 3 */
+.article_container3 {
+  font-size: 14px;
+
+  width: 55%;
+  height: 30vh;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 50px;
+}
+
+/* création de contenus déco */
+.article_container1::before {
+  content: " ";
+  left: 40px;
+  height: 100px;
+  border-bottom: 30px solid transparent;
+  border-left: 60px solid #639fab;
+  position: relative;
+}
+.article_container2::before {
+  content: " ";
+  left: 650px;
+  width: 7px;
+  height: 300px;
+  background: #639fab;
+  position: relative;
+}
+.article_container3::before {
+  content: " ";
+  position: relative;
+  border-top: 20px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 40px solid #639fab;
+}
+
+.exp {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  color: rgb(75, 69, 69);
+}
+
+/* changement de bck color et taille du texte quand hover
+
+.article_container1:hover .text_container,
+.article_container2:hover .text_container,
+.article_container3:hover .text_container {
+  font-size: 1.1em;
+  transition: 0.3s;
+} */
+
+/* RUBRIQUE COMPÉTENCES  */
+
+.progress-circle {
+  font-size: 15px;
+  margin: 20px;
+  position: relative;
+  padding: 0;
+  width: 5em;
+  height: 5em;
+  background-color: #e0b825;
+  border-radius: 50%;
+  line-height: 5em;
+}
+
+.progress-circle:after {
+  border: none;
+  position: absolute;
+  top: 0.35em;
+  left: 0.35em;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  width: 4.3em;
+  height: 4.3em;
+  content: " ";
+  background-color: whitesmoke;
+}
+/* Text inside the control */
+.progress-circle span {
+  position: absolute;
+  line-height: 5em;
+  width: 5em;
+  text-align: center;
+  display: block;
+  color: #639fab;
+  font-weight: 600;
+  z-index: 2;
+}
+.left-half-clipper {
+  /* a round circle */
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  position: absolute; /* needed for clipping */
+  clip: rect(0, 5em, 5em, 2.5em); /* clips the whole left half*/
+}
+/* when p>50, don't clip left half*/
+.progress-circle.over50 .left-half-clipper {
+  clip: rect(auto, auto, auto, auto);
+}
+.value-bar {
+  /*This is an overlayed square, that is made round with the border radius,
+   then it is cut to display only the left half, then rotated clockwise
+   to escape the outer clipping path.*/
+  position: absolute; /*needed for clipping*/
+  clip: rect(0, 2.5em, 5em, 0);
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 0.45em solid #639fab; /*The border is 0.35 but making it larger removes visual artifacts */
+  box-sizing: border-box;
+}
+/* Progress bar filling the whole right half for values above 50% */
+.progress-circle.over50 .first50-bar {
+  /*Progress bar for the first 50%, filling the whole right half*/
+  position: absolute; /*needed for clipping*/
+  clip: rect(0, 5em, 5em, 2.5em);
+  background-color: #639fab;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+.progress-circle:not(.over50) .first50-bar {
+  display: none;
+}
+
+.progress-circle.p20 .value-bar {
+  transform: rotate(72deg);
+}
+.progress-circle.p30 .value-bar {
+  transform: rotate(108deg);
+}
+.progress-circle.p40 .value-bar {
+  transform: rotate(144deg);
+}
+.progress-circle.p50 .value-bar {
+  transform: rotate(180deg);
+}
+.progress-circle.p60 .value-bar {
+  transform: rotate(216deg);
+}
+.progress-circle.p70 .value-bar {
+  transform: rotate(252deg);
+}
+.progress-circle.p80 .value-bar {
+  transform: rotate(288deg);
+}
+.progress-circle.p90 .value-bar {
+  transform: rotate(324deg);
+}
+.progress-circle.p99 .value-bar {
+  transform: rotate(356deg);
+}
+
+.competences_container {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-image: url(/img/bck2.jpg);
+  background-size: contain;
+}
+
+.competences_content::before {
+  content: " ";
+  position: absolute;
+  width: 170px;
+  height: 620px;
+  top: 1250px;
+  left: 550px;
+  background-color: #e0b825;
+}
+
+.competences_content h1 {
+  writing-mode: sideways-lr;
+  color: #fdfbfb;
+  position: relative;
+  padding-top: 100px;
+  right: 80px;
+}
+
+.competences_container h5,
+.it_skills h5 {
+  font-size: 16px;
+}
+
+.general {
+  align-items: center;
+  display: flex;
+  padding-right: 50px;
+}
+
+.soft_skills {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 80px;
+}
+
+.it_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+.it_skills {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+/* FOOTER */
+
+footer {
+  /* background-image: url(/img/bck2.jpg);
+  background-size: contain; */
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
   display: flex;
   align-items: center;
 }
 
+footer p {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+footer span {
+  color: #e0b825;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+footer a {
+  font-size: 2em;
+  color: #4b4545;
+  padding-right: 30px;
+}
+
 /* faire rotationner avatar lorsque l'on passe desssus*/
-img:hover {
+footer:hover img,
+footer:hover i {
   transform: rotate(360deg);
 }
 
 /* définir la taille de l'avatar et la vitesse de son animation */
-img {
-  width: 150px;
-  transition: transform .7s ease-in-out;
-}
-
-
-/* metttre nav en display flex et répartir les onglets proportionnellement  */
-nav {
-  display: flex;
-  justify-content:space-around;
-  font-size: 15px;
-}
-
-/* ajouter des bordures à bottom et colorer son fond*/
-.bottom {
-    background-color: rgb(250, 234, 17);
-    border-top: solid 2px  rgb(92, 86, 86);
-    border-bottom: solid 2px  rgb(92, 86, 86);
-    }
-
-/* s'assurer que le backgroud fasse toute la taille de bord à bord*/
-footer {
-margin: 1em;10%
+footer img,
+footer i {
+  width: 30px;
+  transition: transform 0.7s ease-in-out;
 }

@@ -5,9 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="cv-anais-labit.css" />
+    <link rel="stylesheet" href="cv-anais-labit copy.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap"
       rel="stylesheet"
@@ -17,94 +25,316 @@
 
   <body>
     <header>
-      <section class="top_header">
-        <img src="avatar.png" alt="avatar Anaïs Labit" />
-
+      
         <div class="text">
           <h1>Anaïs Labit</h1>
-          <p>
-            <em>
-              • en recherche de contrat d'alternance Développeur.se Web •
-            </em>
-</p>
+          <p>• en recherche de contrat d'alternance Développeur Web •</p>
         </div>
       </section>
-
-      <hr>
       <nav>
-        <a href="#about">À MON SUJET</a> <a href="#form">FORMATIONS</a> 
-        <a href="#exp">EXPÉRIENCES</a>
-        <a href="#comp">COMPÉTENCES</a>
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li> <a href="#form">Formations</a></li>
+          <li><a href="#port">Portfolio</a></li>
+          <li><a href="#comp">Compétences</a></li>
+          <li><a href="#exp">Expériences</a></li>
+          <li><a href="#cont">Contact</a></li>
+
+        </ul>
       </nav>
-      <hr>
     </header>
 
-    <div>
-      <section class="top_left">
-        <h4 id="about">À MON SUJET</h4>
-        <p>
-          À <em>29 ans</em>, j’ai décidé de mettre mes compétences de
-          programmatrice culturelle au service d'un nouveau projet, le
-          <em>développement informatique</em>.
-          <br>
-          Mes expériences passées m'ont notamment permis de développer rigueur,
-          anticipation, ingéniosité et adaptabilité aux besoins des partenaires.
-        </p>
-
-        <p></p>
-      </section>
-
-      <section class="top_right">
-        <h4 id="form">FORMATIONS</h4>
-        <ul>
-          <li>
-            2023 • Titre Développeur.se Web niveau 5 (rentrée à La Plateforme
-            septembre 2022)
-          </li>
-          <li>2022 • Certification AWS Cloud Practitioner</li>
-          <li>
-            2015 • Master Médiation culturelle des arts, Marseille - Mémoire : «
-            Le cinéma, un Art au cœur d’une industrie. »
-          </li>
-          <li>2013 • Licence Anthropologie, brighton (UK)</li>
-          <li>2010 • Baccalauréat Littéraire, Aix-en-Pce</li>
-        </ul>
-
-        <p>en ligne :</p>
-        <p></p>
-        <ul>
-          <li>
-            <a href="https://openclassrooms.com" target="_blank"
-              >openclassrooms</a
-            >
-          </li>
-          <li>
-            <a href="https://www.w3schools.com" target="_blank">w3schools</a>
-          </li>
-          <li><a href="https://learning.edx.org" target="_blank">edx</a></li>
-        </ul>
-      </section>
+    <div class="aboutme_banner">
+      <h1 id="about">About me </h1>
+        <div class="details"> 
+          <div class="born">
+            <h9>Née à</h9>
+            <h5>Aix-en-Provence</h5>
+            </div>
+          <div class="birth">
+            <h9>Date de naissance</h9>
+            <h5>05-01-1993</h5>
+          </div>
+          <div class="profil">
+            <h9>Profil</h9>
+            <h5>Reconversion professionnelle</h5>
+        </div>
+      </div>
+       <p>
+        À 29 ans, j’ai fait le choix d'amorcer un processus de reconversion afin
+        de m’épanouir dans un domaine sans cesse en évolution, le développement
+        web. Mon expérience de médiatrice culturelle m'a notamment permis de
+        développer rigueur, anticipation, ingéniosité et adaptabilité aux
+        besoins des partenaires. J'ai validé une formation AWS cloud Practionner
+        cet été, première étape de ce changement de vie mûrement réfléchi qui,
+        outre le cloud lui-même, m'a permis de me familiariser avec des
+        environnements de travail GNU/Linux, découvrir les fondamentaux du
+        réseau, de la sécurité et des bases de données ainsi que de l’écosystème
+        informatique en général. De retour à l'école depuis le mois de
+        septembre, je me forme en HTML, CSS, PHP et Python notamment.
+      </p>
     </div>
 
-    <div>
-      <section class="top_mid">
-        <h4 id="exp">EXPÉRIENCES</h4>
+    <div class="cards_container">
+      <div class="card_content"> <h1 id="form">Formations</h1> </div>
+        <div class="first_card"> 
+  <!-- <div class="flip_card">           
+  <div class="flip_card_inner">
+          <div class="flip_card_front">
+          <span> <i class="fa-solid fa-graduation-cap"> 2023</i> </span>
 
-        <p>
-          • 2021- 2018 - <em> Assistante de médiation et programmation </em> -
-          <a
-            href="http://cinediagonal.com/FR/9/cinema-diagonal-montpellier.html"
-            target="_blank"
-            >Cinéma Diagonal
-          </a>
-        </p>
+          </div> 
+          <div class="flip_card_back"> -->
+            <h3>Titre Développeur Web niveau 5</h3>
+            <p>La Plateforme (rentrée septembre 2022)</p>
+            <a href="https://laplateforme.io/start/developpeur-web-mobile/"
+              >Découvrir l'école</a
+            >
+          <!-- </div>
+        </div> -->
+      </div>
 
-        <p>
-          <details>
-            <summary>Voir le détail des missions</summary>
+      <div class="flip_card">
+        <div class="flip_card_inner">
+          <div class="flip_card_front">
+            <span> 2022</span>
+          </div>
+
+          <div class="flip_card_back">
+            <h3>Certification AWS Cloud Practitioner</h3>
+            <p>Amazon Web Service</p>
+            <a
+              href="https://www.credly.com/badges/08363970-aba5-4b36-8e09-9bada1097b07/public_url"
+              >Voir mon certificat</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="flip_card">
+        <div class="flip_card_inner">
+          <div class="flip_card_front">
+            <span> 2015</span>
+          </div>
+          <div class="flip_card_back">
+            <h3>Master Médiation culturelle des arts</h3>
+            <p>Mémoire : « Le cinéma, un Art au cœur d’une industrie. »</p>
+            <p>Aix-Marseille Université</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip_card">
+        <div class="flip_card_inner">
+          <div class="flip_card_front">
+            <span>2013</span>
+          </div>
+          <div class="flip_card_back">
+            <h3>Licence Anthropologie Culturelle</h3>
+            <p>University of Sussex (GB)</p>
+            <a href="https://www.sussex.ac.uk/anthropology/"
+              >Découvrir l'université</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="flip_card">
+        <div class="flip_card_inner">
+          <div class="flip_card_front">
+            <span> 2010 </span>
+          </div>
+          <div class="flip_card_back">
+            <h3>Lycée Sacré-coeur <br />Aix-en-Provence</h3>
+            <p>Baccalauréat littéraire spécialité cinéma</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<section class="portfolio">
+      <div class="container"><h1 id="port">Portfolio</h1></div>
+      <div class="cards">
+        <div class="card0">
+          <h3>Site Itinérances</h3>
+          <button>
+            <a href="">VISITER ITINÉRANCES</a>
+          </button>
+        </div>
+        <div class="card1">
+          <h3>Fansite La Kinopithèque</h3>
+          <button>
+            <a href="https://anais-labit.students-laplateforme.io/fansite/">VISITER LA KINOPITHÈQUE</a>
+          </button>
+        </div>
+        <div class="card2">
+          <h3>Repo Plesk sur Github</h3>
+          <button>
+            <a href="https://github.com/anais-labit/Plesk">VOIR LE REPO</a>
+          </button>
+        </div>
+        <div class="card3">
+          <h3>Site La Plateforme.io</h3>
+            <button>
+              <a href="https://anais-labit.students-laplateforme.io/Plesk/accueil.html">VISITER LA PLATEFORME.IO</a>
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+
+<div class="competences_container" > 
+  <div class="competences_content"> <h1 id="comp">Compétences</h1> </div>
+  <div class="general_container">
+
+<div class="general">
+     <div class="progress-circle over50 p90">
+   <span>90%</span>
+   <div class="left-half-clipper">
+     <div class="first50-bar"></div>
+     <div class="value-bar"></div>
+   </div>
+ </div>
+  <h5>Anglais (TOEFL)</h5> 
+</div>
+<div class="general">
+    <div class="progress-circle over50 p60">
+    <span>60%</span>
+    <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar"></div>
+    </div>
+  </div>
+    <h5>Espagnol</h5>
+</div>
+<div class="general">
+    <div class="progress-circle over50 p90">
+    <span>90%</span>
+    <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar"></div>
+    </div>
+  </div>
+    <h5>Conduite et suivi de projets</h5>
+
+</div>
+<div class="general">
+    <div class="progress-circle over50 p90">
+    <span>90%</span>
+    <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar"></div>
+    </div>
+  </div>
+    <h5>Capacités rédactionnelles</h5>
+
+</div>
+</div>
+
+  <div class="soft_container">
+  <div class="soft_skills">
+    <div class="progress-circle over50 p90">
+    <span>90%</span>
+    <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar"></div>
+    </div>
+  </div>
+    <h5>Organisation</h5>
+    </div>
+  <div class="soft_skills">
+    <div class="progress-circle over50 p90">
+    <span>80%</span>
+    <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar"></div>
+    </div>
+  </div>
+    <h5>Relationnel</h5>
+    </div>
+      <div class="soft_skills">
+    <div class="progress-circle over50 p99">
+    <span>99.9%</span>
+    <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar"></div>
+    </div>
+  </div>
+    <h5>Sens du détail</h5>
+    </div>
+
+      <div class="soft_skills">
+    <div class="progress-circle over50 p90">
+    <span>90%</span>
+    <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar"></div>
+    </div>
+  </div>
+    <h5>Aisance à l'oral</h5>
+    </div>
+
+</div>
+</div>
+
+  
+<div class="it_container">
+<div class="it_skills">
+    <div class="progress-circle over50 p40">
+    <span>40%</span>
+    <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar"></div>
+    </div>
+  </div>
+    <h5>HTML, CSS, JS</h5>
+    </div>
+
+       <div class="it_skills">
+    <div class="progress-circle over50 p20">
+    <span>20%</span>
+    <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar"></div>
+    </div>
+  </div>
+    <h5>PHP, Python</h5>
+    </div>
+
+<div class="it_skills">
+    <div class="progress-circle over50 p60">
+    <span>60%</span>
+    <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar"></div>
+    </div>
+  </div>
+    <h5>Bureautique (Windows, GNU/Linux)</h5>
+    </div>
+ 
+
+<div class="it_skills">
+    <div class="progress-circle over50 p60">
+    <span>60%</span>
+    <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar"></div>
+    </div>
+  </div>
+    <h5>Cloud (AWS)</h5>
+    </div>
+</div>
+
+
+
+    <div class="page"> 
+      <div class="exp"> <h1 id="exp">Expériences</h1> </div>      
+        <div class="article_container1">
+          <div class="text_container">
+            <h3>2021- 2018 • Cinéma Diagonal</h3>
+            <h3>Assistante de médiation et programmation</h3>
             <ul>
               <li>
-                choix des films et des partenaires en lien avec les objetifs du
+                choix des films et des partenaires en lien avec les objectifs du
                 projet
               </li>
               <li>
@@ -121,97 +351,61 @@
               </li>
               <li>rédaction des bilans institutionnels et du programme</li>
             </ul>
-          </details>
-        </p>
+          </div>
+        </div>
 
-        <p>
-          • 2018-2015 - <em> Chargée de mission enquête et valorisation </em>-
-          <a href="https://www.institut-image.org/" target="_blank"
-            >Cinéma Institut de l'Image</a
-          >
-        </p>
-
-        <p>
-          <details>
-            <summary>Voir le détail des missions</summary>
+        <div class="article_container2">
+          <div class="text_container">
+            <h3>2018-2015 • Cinéma Institut de l'Image</h3>
+            <h3>Chargée de mission enquête et valorisation</h3>
             <ul>
               <li>
                 veille de l'actualité éducation artistique au cinéma en région
               </li>
               <li>
-                <a
-                  href="https://www.pole-images-region-sud.org/"
-                  target="_blank"
-                  >rédaction d'articles pour le web</a
-                >
-                : choix éditoriaux, recherches et mise en page
+                rédaction d'articles pour le web : choix éditoriaux, recherches
+                et mise en page
               </li>
               <li>
                 conception de projets sur la base des objectifs des partenaires
               </li>
               <li>mise en lien de professionnels: artistes, animateurs…</li>
             </ul>
-          </details>
-        </p>
+          </div>
+        </div>
 
-        <p>
-          • 2015-2014 - <em> Stages en action culturelle </em> -
-          <a href="https://cinemalegyptis.org/" target="_blank"
-            >Cinéma Friche la Belle de Mai</a
-          >
-          et
-          <a href="https://www.alhambracine.com/" target="_blank"
-            >Cinéma Alhambra</a
-          >
-        </p>
-
-        <p>
-          <details>
-            <summary>Voir le détail des missions</summary>
+        <div class="article_container3">
+          <div class="text_container">
+            <h3>2015-2014 • Cinéma Friche Belle de Mai et Cinéma Alhambra</h3>
+            <h3>Stages en action culturelle</h3>
             <ul>
               <li>
                 gestion des bénévoles et accueil des publics lors des événements
               </li>
-              <li>élaboration de documents pédagogiques</li>
+              <li>élaboration des documents pédagogiques</li>
               <li>
                 conduite d'ateliers de programmation (hôpitaux, écoles, centres
                 sociaux...)
               </li>
             </ul>
-          </details>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+     <footer>
+      <div>
+        <p>&copy; ANAIS LABIT <span class="year">• 2022</span>
         </p>
-      </section>
-
-      <section class="bottom_mid">
-        <h4 id="comp">COMPÉTENCES</h4>
-        <ul>
-          <li>Anglais (TOEFL)</li>
-          <li>Rédactionnel</li>
-          <li>Gestion de projets</li>
-          <li>Permis (véhiculée)</li>
-          <li>Bureautique (Windows)</li>
-        </ul>
-
-        <p>en cours d'acquisition :</p>
-        <p></p>
-
-        <ul>
-          <li>Python</li>
-          <li>HTML</li>
-          <li>PHP</li>
-          <li>Javascript</li>
-          <li>Cloud AWS</li>
-        </ul>
-        <br>
-      </section>
-    </div>
-
-    <div class="bottom">
-      <footer>
-      06 00 00 00 00 -
-      <a href="mailto:anais.labit@lalalalala.com">anais.labit@lalalalala.com</a>
-      - 13 770 - Venelles
+      </div>
+      <div></div>
+      <div class="social">
+        <span id="cont">• Comment me contacter ? •</span>
+        <a href="mailto:anais.labit@gmail.com"><img src="/img/avatar.png" alt="avatar Anaïs Labit"></a>        
+        <a href="https://www.linkedin.com/in/anais-labit-327616129"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/anais-labit"><i class="fab fa-github-alt"></i></a>
+      </div>
     </footer>
-    </div>
   </body>
 </html>
