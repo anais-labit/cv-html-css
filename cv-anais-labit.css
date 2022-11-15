@@ -29,8 +29,6 @@ header p {
 /* NAVBAR */
 
 nav {
-  background-image: url(img2.jpg);
-  background-size: cover;
   height: 50px;
   background-color: #0005;
   display: flex;
@@ -214,31 +212,29 @@ nav ul li a {
 .portfolio {
   background-image: url(/img/bck2.jpg);
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio .container h1 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .cards {
   display: flex;
-  justify-content: flex-end;
-  text-align: center;
-  padding-bottom: 50px;
+  /* justify-content: space-evenly; */
+  text-align: center; 
   padding: 30px;
   outline: none;
   box-shadow: 0 0 8px grey;
+  padding-left:160px;
 }
 
-.card0,
-.card1,
-.card2,
-.card3 {
-  padding-right: 50px;
-  padding-left: 40px;
+.card0, .card1, .card3{
+    padding-left: 80px;
+}
+
+.card2{
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+
 }
 
 .portfolio .cards button {
@@ -249,13 +245,14 @@ nav ul li a {
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  width: 100%;
+    margin-bottom: 20px;
+
 }
 
 .portfolio button a {
   text-decoration: none;
   color: #639fab;
-  position: relative;
+  position: ab;
 }
 
 .cards:hover {
@@ -484,7 +481,7 @@ nav ul li a {
   position: absolute;
   width: 170px;
   height: 620px;
-  top: 1250px;
+  top: 1400px;
   left: 550px;
   background-color: #e0b825;
 }
