@@ -197,6 +197,14 @@ nav ul li a {
   z-index: 3;
 }
 
+.cards_container .content2 {
+  background-color: #e0b825;
+  position: absolute;
+  right: 800px;
+  width: 150px;
+  padding: 10px;
+}
+
 .cards_container a {
   color: rgb(95, 93, 93);
 }
@@ -218,23 +226,20 @@ nav ul li a {
 
 .cards {
   display: flex;
-  /* justify-content: space-evenly; */
-  text-align: center; 
+  text-align: center;
   padding: 30px;
   outline: none;
   box-shadow: 0 0 8px grey;
-  padding-left:160px;
+  position: relative;
+  z-index: 3;
 }
 
-.card0, .card1, .card3{
-    padding-left: 80px;
-}
-
-.card2{
-  display: flex;
-  flex-direction: column;
+.card0,
+.card1,
+.card2,
+.card3 {
   padding-left: 80px;
-
+  padding-right: 30px;
 }
 
 .portfolio .cards button {
@@ -245,19 +250,12 @@ nav ul li a {
   font-size: 16px;
   border: none;
   border-radius: 5px;
-    margin-bottom: 20px;
-
+  margin-bottom: 20px;
 }
 
 .portfolio button a {
   text-decoration: none;
   color: #639fab;
-  position: ab;
-}
-
-.cards:hover {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 /* RUBRIQUE EXPERIENCES */
@@ -312,7 +310,6 @@ nav ul li a {
 /* flex le conteur 2 et reverse par rapport à 1 et 3 */
 .article_container3 {
   font-size: 14px;
-
   width: 55%;
   height: 30vh;
   padding-left: 20px;
@@ -481,7 +478,7 @@ nav ul li a {
   position: absolute;
   width: 170px;
   height: 620px;
-  top: 1400px;
+  top: 1300px;
   left: 550px;
   background-color: #e0b825;
 }
