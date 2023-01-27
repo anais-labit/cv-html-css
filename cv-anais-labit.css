@@ -1,0 +1,909 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  height: 80vh;
+  width: 100vw;
+  background-size: 200%;
+  padding-top: 60px;
+  background-image: url(./img/des-recits-J8IXSCV2eEA-unsplash.jpg);
+  background-size: 160%;
+}
+
+body {
+  font-family: "Montserrat";
+  color: rgb(75, 69, 69);
+}
+
+header h1 {
+  margin-left: 100px;
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 0 1px black;
+}
+
+header p {
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  margin-left: 100px;
+  font-weight: bold;
+  text-shadow: 1px 0 1px black;
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: absolute;
+  padding-top: 50px;
+  padding-right: 50px;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: #ffca4b 1px 1px 1px;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+  color: #ffca4b;
+  font-weight: 800;
+  text-shadow: none;
+}
+
+.navbar .menu-burger {
+  display: none;
+  position: absolute;
+  width: 20px;
+  top: 50px;
+  right: 50px;
+}
+
+/* RUBRIQUE À PROPOS DE MOI  */
+
+.aboutme_banner {
+  background-image: url(./img/bck2.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100px;
+  color: rgb(75, 69, 69);
+  padding-top: 30px;
+  padding-bottom: 80px;
+  box-shadow: 0 0 10px grey;
+}
+
+.aboutme_banner .details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 50px;
+}
+
+.details .born h9,
+.details .profil h9,
+.details .birth h9 {
+  font-size: 12px;
+}
+
+.details .born h5,
+.details .profil h5,
+.details .birth h5 {
+  font-size: 13px;
+  padding-right: 200px;
+  padding-bottom: 10px;
+}
+
+.aboutme_banner p {
+  color: rgb(75, 69, 69);
+  text-align: justify;
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 50px;
+  line-height: 1.7em;
+  padding-left: 50px;
+  z-index: 3;
+}
+
+.aboutme_banner h1 {
+  padding-top: 20px;
+  padding-left: 50px;
+  z-index: 3;
+  font-size: 39px;
+}
+
+/* RUBRIQUE FORMATIONS */
+
+/*  définir les proporités du container .flip_card */
+.flip_card {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  z-index: 3;
+}
+
+.first_card {
+  margin-top: -70px;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  background-color: #639fab;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  z-index: 3;
+}
+
+.first_card p,
+.first_card a,
+.first_card h3,
+.flip_card_back p,
+.flip_card_back a,
+.flip_card_back h3 {
+  padding: 8px;
+}
+
+/* containeur de l'avant et l'arrière de la card */
+.flip_card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* tourner à 180° sur soi même quand hover sur lee container .flip_card */
+.flip_card:hover .flip_card_inner {
+  transform: rotateY(180deg);
+}
+
+/* placer l'avant et l'arrière de la card */
+.flip_card_front,
+.flip_card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* définir les propriétés du back de la card */
+.flip_card_back {
+  color: rgb(75, 69, 69);
+  transform: rotateY(180deg);
+  text-align: center;
+  padding: 5px;
+  margin-top: -40px;
+  background-color: #639fab;
+  color: #fff;
+}
+
+/* positionner les cartes côte à côte */
+.cards_container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 210px;
+  background-image: url(./img/bck2.jpg);
+  background-size: contain;
+}
+
+.cards_container .card_content {
+  background-color: #e0b825;
+  position: relative;
+  right: 250px;
+  width: 150px;
+  height: 290px;
+  padding: 10px;
+  text-align: center;
+  writing-mode: vertical-rl;
+  color: #fdfbfb;
+  z-index: 3;
+}
+
+.cards_container .content2 {
+  background-color: #e0b825;
+  position: relative;
+  right: 790px;
+  width: 150px;
+  padding: 10px;
+}
+
+.cards_container a {
+  color: rgb(95, 93, 93);
+}
+
+.flip_card_front span {
+  color: lightgray;
+  text-shadow: 2px 2px 3px rgb(75, 69, 69);
+  font-size: 70px;
+}
+
+#arrow {
+  width: 80px;
+  /* padding-top: 5px; */
+  padding-left: 50px;
+}
+
+#loupe {
+  display: none;
+}
+
+.flip_card #arrow:hover {
+  width: 50%;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+
+/* RUBRIQUE PORTFOLIO */
+
+#port {
+  padding: 30px;
+  font-size: 39px;
+}
+
+.portfolio {
+  background-image: url(./img/bck2.jpg);
+  background-size: cover;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.cards {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 50px;
+  outline: none;
+  box-shadow: 0 0 8px grey;
+  position: relative;
+  z-index: 3;
+  flex-wrap: wrap;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.card0 h3 {
+  padding: 15px;
+}
+
+.portfolio .cards button {
+  background-color: whitesmoke;
+  word-spacing: 0.2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.portfolio button a {
+  text-decoration: none;
+  color: #639fab;
+}
+
+/* RUBRIQUE COMPÉTENCES  */
+
+.compAll {
+  display: flex;
+  flex-direction: row;
+}
+
+#compTitle {
+  display: none;
+}
+
+.competences_container h1 {
+  position: relative;
+  z-index: 5;
+}
+
+.progress-circle {
+  margin: 20px;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: #e0b825;
+  border-radius: 50%;
+  line-height: 2.5em;
+}
+
+.progress-circle:after {
+  position: absolute;
+  top: 0.35em;
+  left: 0.35em;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  content: " ";
+  background-color: whitesmoke;
+}
+
+.competences_container {
+  padding-top: 25px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0px;
+  background-image: url(./img/bck2.jpg);
+  background-size: contain;
+}
+
+.competences_container .competences_content {
+  position: absolute;
+  overflow-x: hidden;
+  margin: 0;
+  left: 300px;
+  top: 1950px;
+  width: 280px;
+  height: 50px;
+  padding: 40px;
+  z-index: 2;
+  background-color: #e0b825;
+}
+
+.competences_content h1 {
+  /* writing-mode: sideways-lr; */
+  color: #fdfbfb;
+  position: relative;
+  right: 0px;
+  font-size: 39px;
+  width: 0;
+  margin: 0;
+}
+
+.competences_container h5,
+.it_skills h5 {
+  font-size: 16px;
+}
+
+.general {
+  align-items: center;
+  display: flex;
+  padding-right: 130px;
+}
+
+.soft_skills {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 80px;
+}
+
+.it_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 100px;
+  padding-top: 20px;
+}
+.it_skills {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  padding-bottom: 15px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+/* RUBRIQUE EXPERIENCES */
+
+.page {
+  background-image: url(./img/bck2.jpg);
+  background-size: cover;
+  padding-left: 170px;
+  padding-top: 100px;
+}
+
+/* agir sur le contenant du text (taille, centrer, bordures...)*/
+.text_container {
+  width: 100%;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+  background: linear-gradient(#fdfbfb, #ebedee);
+  color: rgb(75, 69, 69);
+}
+
+.article_container1 {
+  font-size: 14px;
+  display: flex;
+  padding-bottom: 50px;
+  border-top: 2rem solid #e0b825;
+  border-right: thick double #e0b825;
+  width: 50%;
+  height: 35vh;
+}
+
+.article_container2 {
+  font-size: 14px;
+  display: flex;
+  width: 50%;
+  height: 30vh;
+  padding-right: 0px;
+  padding-bottom: 50px;
+  margin-left: 180px;
+  border-right: 1.5rem solid #e0b825;
+  border-top: thick double #e0b825;
+}
+
+.article_container3 .text_container {
+  border-left: 1rem solid #e0b825;
+  border-top: thick double #e0b825;
+}
+
+/* flex le conteur 2 et reverse par rapport à 1 et 3 */
+.article_container3 {
+  font-size: 14px;
+  width: 55%;
+  height: 30vh;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 50px;
+}
+
+/* création de contenus déco */
+.article_container1::before {
+  content: " ";
+  left: 40px;
+  height: 100px;
+  border-bottom: 30px solid transparent;
+  border-left: 60px solid #639fab;
+  position: relative;
+}
+.article_container2::before {
+  content: " ";
+  left: 650px;
+  width: 7px;
+  height: 300px;
+  background: #639fab;
+  position: relative;
+}
+.article_container3::before {
+  content: " ";
+  position: relative;
+  border-top: 20px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 40px solid #639fab;
+}
+
+.exp {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  color: rgb(75, 69, 69);
+  font-size: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  /* background-image: url(/img/bck2.jpg);
+  background-size: contain; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  font-weight: 600;
+}
+
+footer span {
+  color: #e0b825;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+footer a {
+  font-size: 20px;
+  color: #4b4545;
+  padding-right: 30px;
+}
+
+#mail {
+  width: 20px;
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-left: 6px;
+}
+
+/* faire rotationner avatar lorsque l'on passe desssus*/
+footer:hover img,
+footer:hover i {
+  transform: rotate(360deg);
+}
+
+/* définir la taille de l'avatar et la vitesse de son animation */
+footer img,
+footer i {
+  width: 25px;
+  transition: transform 0.7s ease-in-out;
+}
+
+/* MEDIA QUIERIES POUR TELEPHONE */
+
+@media all and (max-width: 480px) {
+  html,
+  .page,
+  .competences_container,
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    background-size: 300%;
+  }
+
+  header .text {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+  }
+
+  header h1 {
+    font-size: 90px;
+  }
+
+  header p {
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar .menu-burger {
+    display: block;
+    top: -20px;
+    right: 40px;
+  }
+
+  .nav-links {
+    top: -60px;
+    left: 0;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.2);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.6s ease;
+  }
+
+  .nav-links.mobile-menu {
+    margin-left: 0;
+    height: 90vh;
+  }
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  .aboutme_banner {
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 140px;
+  }
+
+  #about {
+    padding-left: 0;
+  }
+
+  .aboutme_banner .details {
+    padding: 0;
+    display: inline;
+  }
+
+  .aboutme_banner .details h9,
+  .aboutme_banner .details h5 {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    width: 100vw;
+  }
+
+  .aboutme_banner p {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+
+  .birth,
+  .profil,
+  .born {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .cards_container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    padding: 0;
+    position: relative;
+    top: 470px;
+  }
+
+  .cards_container .card_content {
+    width: 120px;
+    position: relative;
+    top: 90px;
+    left: 90px;
+  }
+
+  .flip_card_front {
+    padding-left: 0px;
+    margin-top: 20px;
+    width: 195px;
+    height: 200px;
+  }
+  .flip_card_back p {
+    font-size: 15px;
+  }
+
+  .flip_card_back {
+    padding-left: 0px;
+    margin-top: 0px;
+    width: 195px;
+    height: 200px;
+  }
+
+  .first_card {
+    padding-left: 0px;
+    margin-top: -100px;
+    width: 195px;
+    height: 200px;
+  }
+
+  #arrow {
+    display: none;
+  }
+
+  #loupe {
+    display: block;
+    width: 40px;
+    padding-top: 20px;
+    padding-left: 80px;
+  }
+
+  #port {
+    position: relative;
+    top: 282px;
+    font-size: 39px;
+  }
+
+  .portfolio .cards {
+    top: 250px;
+    height: 100vh;
+  }
+
+  .competences_container .competences_content {
+    display: none;
+  }
+
+  #compTitle {
+    display: inline;
+    position: relative;
+    text-shadow: 1px 1px 0 gray;
+    font-size: 39px;
+    color: white;
+    background-color: #e0b825;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    width: 100vw;
+    padding-left: 40px;
+  }
+
+  .competences_container {
+    padding-top: 200%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .compAll {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+
+  .competences_container h5 {
+    font-size: 15px;
+    padding: 10px;
+    /* display: flex; */
+    /* align-items: center; */
+  }
+
+  .general,
+  .soft_skills,
+  .it_skills {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0;
+  }
+
+  .it_container {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #639fab;
+  }
+
+  .progress-circle.over50 {
+    display: none;
+  }
+
+  .it_container h5 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #639fab;
+    color: #fff;
+    text-shadow: 1px 1px 0 gray;
+  }
+
+  .general h5 {
+    width: 150px;
+  }
+
+  .page,
+  .page .exp,
+  .exp {
+    padding: 0px;
+    padding-top: 30px;
+    margin: 0;
+  }
+
+  .exp h1 {
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .article_container1 {
+    padding: 0;
+    width: 100vw;
+    height: 350px;
+    padding-bottom: 70px;
+  }
+
+  .article_container1::before {
+    content: " ";
+    left: 20px;
+    top: -32px;
+    height: 90px;
+  }
+
+  .article_container2 {
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+    width: 90vw;
+    height: 350px;
+
+    padding-bottom: 40px;
+  }
+
+  .article_container2::before {
+    display: none;
+  }
+
+  .article_container3 {
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 90vw;
+    height: 350px;
+
+    padding-bottom: 30px;
+  }
+
+  .text_container h3 {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .text_container li {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .year {
+    display: none;
+  }
+
+  #cont p {
+    padding: 15px;
+  }
+  #contact {
+    width: 150px;
+  }
+  footer {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer p {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #mail {
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-left: 6px;
+  }
+
+  .social {
+    margin-left: 0px;
+  }
+}
